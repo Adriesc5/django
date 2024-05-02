@@ -1,0 +1,4 @@
+{% for product in products%}
+<h2>{{product}}</h2>
+<a href="{% url 'shop:product_detail' product.id %}">Ver más</a>
+{% endfor %}
